@@ -1,14 +1,14 @@
 import type { ResumeData, SectionConfig, AccentOption, Tweaks } from '../types'
 
 export const SECTIONS: SectionConfig[] = [
-  { id: 'about',       label: 'About',       type: 'about' },
-  { id: 'experience',  label: 'Experience',  type: 'experience' },
-  { id: 'projects',    label: 'Projects',    type: 'projects' },
-  { id: 'skills',      label: 'Skills',      type: 'skills' },
-  { id: 'tools',       label: 'Util Tools',  type: 'tools' },
-  { id: 'education',   label: 'Education',   type: 'education' },
+  { id: 'about', label: 'About', type: 'about' },
+  { id: 'experience', label: 'Experience', type: 'experience' },
+  { id: 'projects', label: 'Projects', type: 'projects' },
+  { id: 'skills', label: 'Skills', type: 'skills' },
+  { id: 'tools', label: 'Util Tools', type: 'tools' },
+  { id: 'education', label: 'Education', type: 'education' },
   { id: 'publication', label: 'Publication', type: 'publication' },
-  { id: 'contact',     label: 'Contact',     type: 'contact' },
+  { id: 'contact', label: 'Contact', type: 'contact' },
 ]
 
 export const ACCENTS: AccentOption[] = [
@@ -30,28 +30,33 @@ Here is everything you know about Nattakitt:
 
 NAME: Nattakitt Wangcharoen
 ROLE: Software Engineer, 4+ years experience in banking & FinTech
-CONTACT: nattakittce@hotmail.com | 097-040-2144 | github.com/Nattakitt-Tin | linkedin.com/in/nattakitt-wangcharoen-68a8a719a
+CONTACT: nattakittce@hotmail.com | 097-0402-144 | github.com/Nattakitt-Tin | linkedin.com/in/nattakitt-wangcharoen-68a8a719a
 
 EXPERIENCE:
-1. Backend Engineer @ Kiatnakin Phatra Financial Group (KKP Better Team) — 2023–Present
-   - Kotlin, Java Spring Boot, Golang microservices
-   - Deposit features: fund transfer, bill payment, FX exchange, pocket sub-wallet
-   - Kafka, MQ event-driven architecture
-   - Docker, Kubernetes, Jenkins CI/CD
+1. Backend Engineer @ Kiatnakin Phatra Financial Group (KKP Better) — 2023–Present
+   - Architected scalable backend services for a mobile banking platform supporting core financial transactions and high user volume
+   - Microservices & RESTful APIs using Kotlin, Java (Spring Boot), and Golang
+   - Banking features: fund transfers, bill payments, top-ups, FX with real-time rate integration, and Better Box (sub-wallet for budgeting and fund allocation)
+   - Event-driven communication using Kafka and MQ for system decoupling and reliability
+   - Built load testing scripts (JMeter, k6) and performed performance tuning & resource optimization
+   - Transaction notification systems delivering near real-time updates across services
+   - Internal back-office APIs and defined API standards/contracts across teams
+   - CI/CD pipelines and containerized deployments using Docker, Kubernetes, and Jenkins
 
 2. Software Engineer @ Dataxet:Infoquest — 2020–2023
-   - Web crawling: Python Selenium, NodeJS Playwright
-   - Redis queue management
-   - NLP text analysis & classification
-   - REST APIs for ML model serving
+   - Scalable web & feed crawling with Python (Selenium) and Node.js (Playwright) for structured data extraction
+   - Distributed task queues with Redis for high-speed storage and low-latency retrieval
+   - Bespoke automation tools that streamlined internal workflows and reduced manual overhead
+   - NLP-based text analysis models to boost search relevance and classification accuracy
+   - REST APIs serving production ML models and real-time analytics
 
-SKILLS: Python, Golang, Kotlin, Java | Kafka, ActiveMQ, RabbitMQ, Redis | TensorFlow, Keras, Scikit-learn, PyThaiNLP, Huggingface | Pandas, Streamlit | Selenium, Playwright, BeautifulSoup | JMeter, k6 | Docker, K8s, Jenkins
+SKILLS: Python, Golang, Kotlin, Java | Redis, Kafka, Active MQ, Rabbit MQ | Scikit-learn, PyThaiNLP, Huggingface | JMeter, k6 | Selenium, Playwright, BeautifulSoup | Docker, Kubernetes, Jenkins
 
 EDUCATION: B.Eng Computer Engineering, KMITL (2016–2020)
 
 PUBLICATION: "Fast Classifying Non-Helmeted Motorcyclists using CNN" — SNRU Journal of Science & Technology
 
-PROJECTS: KKP Deposit Platform, Helmet Detection CNN (published), Media Intelligence Crawler, Thai Text Analytics, API Load Test Suite, Transaction Notification Service
+PROJECTS: KKP Better — Deposit APIs, Better Box (sub-wallet), FX Exchange Integration, Helmet Detection CNN (published), Media Intelligence Crawler, Thai Text Analytics, Transaction Notification Service
 
 If asked about salary expectations, availability, or personal opinions, politely deflect and suggest contacting directly via email.`
 
@@ -68,23 +73,26 @@ export const DATA: ResumeData = {
   summary:
     'Software Engineer with <strong>4+ years</strong> in banking & <strong>FinTech</strong>. Expert in backend microservices, API design & event-driven systems. Passionate about leveraging <strong>AI/ML</strong> for real-world applications.',
   contact: {
-    phone: '097-040-2144',
+    phone: '097-0402-144',
     email: 'nattakittce@hotmail.com',
     github: 'github.com/Nattakitt-Tin',
     linkedin: 'linkedin.com/in/nattakitt-wangcharoen-68a8a719a',
   },
   experience: [
     {
-      role: 'Backend Engineer',
-      team: 'KKP Better Team',
+      role: 'Software Engineer (Backend)',
+      team: 'KKP Better',
       company: 'Kiatnakin Phatra Financial Group',
       period: '2023–Present',
       bullets: [
-        'Built APIs using Kotlin, Java Spring Boot & Golang in microservices architecture',
-        'Deposit features: fund transfer, bill payment, FX exchange & pocket sub-wallet',
-        'Integrated Kafka + MQ for real-time event-driven communication',
-        'Transaction notification services & scalable API specs in Agile sprints',
-        'CI/CD with Docker, Kubernetes, Jenkins, GitLab',
+        'Architected scalable backend services for a mobile banking platform supporting core financial transactions & high user volume',
+        'Microservices & RESTful APIs using Kotlin, Java (Spring Boot) & Golang',
+        'Delivered key banking features: fund transfers, bill payments, top-ups, FX with real-time rate integration & Better Box sub-wallet',
+        'Event-driven communication via Kafka & MQ for system decoupling and reliability',
+        'Load testing (JMeter, k6) with performance tuning & resource optimization for throughput / latency benchmarks',
+        'Transaction notification systems delivering near real-time updates across services',
+        'Internal back-office APIs & defined API standards / contracts across teams',
+        'CI/CD pipelines & containerized deployments using Docker, Kubernetes & Jenkins',
       ],
     },
     {
@@ -93,10 +101,11 @@ export const DATA: ResumeData = {
       company: 'Dataxet:Infoquest',
       period: '2020–2023',
       bullets: [
-        'Web crawling with Python Selenium & NodeJS Playwright',
-        'Redis queue management & data optimization',
-        'Enhanced NLP-based text analysis & classification models',
-        'Deployed REST APIs for ML models & analytics services',
+        'Scalable web & feed crawling using Python (Selenium) & Node.js (Playwright) for structured data extraction',
+        'Distributed task queues with Redis for high-speed storage & low-latency retrieval',
+        'Bespoke automation tools that streamlined internal workflows and reduced manual overhead',
+        'Advanced NLP-based text analysis models to boost search relevance & classification accuracy',
+        'Robust REST APIs serving production-ready ML models & real-time analytics',
       ],
     },
   ],
@@ -134,7 +143,7 @@ export const DATA: ResumeData = {
       company: 'Kiatnakin Phatra',
       period: '2023',
       desc: 'Event-driven notification microservice ensuring real-time transaction updates to internal banking teams via Kafka and MQ.',
-      techs: ['Golang', 'Kafka', 'Active MQ', 'Docker'],
+      techs: ['Kotlin', 'Kafka', 'Active MQ', 'Docker', 'K8s'],
       link: null,
     },
     {
@@ -143,7 +152,7 @@ export const DATA: ResumeData = {
       company: 'Kiatnakin Phatra',
       period: '2025–2026',
       desc: 'Backend APIs powering the KKP Better mobile app deposit features — fund transfer and bill payment endpoints built on microservices architecture.',
-      techs: ['Kotlin', 'Spring Boot', 'Docker', 'K8s'],
+      techs: ['Kotlin', 'Spring Boot', 'Kafka'],
       link: null,
     },
     {
@@ -152,35 +161,35 @@ export const DATA: ResumeData = {
       company: 'Kiatnakin Phatra',
       period: '2025–2026',
       desc: 'Real-time currency exchange API integration for the mobile banking app, enabling live rate conversion across supported currencies.',
-      techs: ['Golang', 'Redis', 'Kafka', 'Docker'],
+      techs: ['Kotlin', 'Spring Boot', 'Kafka'],
       link: null,
     },
     {
       tag: 'FINTECH',
-      name: 'Pocket Sub-wallet',
+      name: 'Better Box (Sub-wallet)',
       company: 'Kiatnakin Phatra',
       period: '2025-2026',
-      desc: 'Sub-wallet feature for expense categorization and budget management — allows users to split funds into named pockets within their account.',
-      techs: ['Kotlin', 'Spring Boot', 'Kafka', 'Docker'],
+      desc: 'Sub-wallet system for budgeting and fund allocation — lets users split funds into named boxes within their account for expense categorization.',
+      techs: ['Golang', 'Kotlin', 'Spring Boot', 'Kafka', 'Redis'],
       link: null,
     },
     { _placeholder: true },
   ],
   skills: [
-    { cat: 'Languages',             tags: ['Python', 'Golang', 'Kotlin', 'Java'] },
-    { cat: 'Messaging & Caching',   tags: ['Kafka', 'Active MQ', 'Rabbit MQ', 'Redis'] },
-    { cat: 'AI / Machine Learning', tags: ['TensorFlow', 'Keras', 'Scikit-learn', 'PyThaiNLP', 'Huggingface'] },
-    { cat: 'Data & Viz',            tags: ['Pandas', 'Openpyxl', 'Streamlit'] },
-    { cat: 'Scraping',              tags: ['Selenium', 'Playwright', 'BeautifulSoup'] },
-    { cat: 'DevOps',                tags: ['Docker', 'Kubernetes', 'Jenkins', 'GitHub', 'GitLab'] },
+    { cat: 'Programming Languages', tags: ['Python', 'Golang', 'Kotlin', 'Java'] },
+    { cat: 'Messaging Event & Caching', tags: ['Redis', 'Kafka', 'Active MQ', 'Rabbit MQ'] },
+    { cat: 'AI & Machine Learning', tags: ['Scikit-learn', 'PyThaiNLP', 'Huggingface'] },
+    { cat: 'Load Test Tool', tags: ['JMeter', 'k6'] },
+    { cat: 'Scraping & Automation', tags: ['Selenium', 'Playwright', 'BeautifulSoup'] },
+    { cat: 'DevOps', tags: ['Docker', 'Kubernetes', 'Jenkins', 'GitHub', 'GitLab'] },
   ],
   tools: [
-    { icon: '⚡', name: 'k6',         desc: 'Modern load testing as code with JS scripting' },
-    { icon: '🔨', name: 'JMeter',     desc: 'Apache load & performance test orchestration' },
+    { icon: '⚡', name: 'k6', desc: 'Modern load testing as code with JS scripting' },
+    { icon: '🔨', name: 'JMeter', desc: 'Apache load & performance test orchestration' },
     { icon: '🕷️', name: 'Playwright', desc: 'Cross-browser automation & scraping engine' },
-    { icon: '📊', name: 'Streamlit',  desc: 'Rapid ML/data dashboards in pure Python' },
-    { icon: '🗃️', name: 'Redis CLI',  desc: 'Cache inspection & queue management tool' },
-    { icon: '🐳', name: 'Docker',     desc: 'Container builds, compose & k8s deployments' },
+    { icon: '📊', name: 'Streamlit', desc: 'Rapid ML/data dashboards in pure Python' },
+    { icon: '🗃️', name: 'Redis CLI', desc: 'Cache inspection & queue management tool' },
+    { icon: '🐳', name: 'Docker', desc: 'Container builds, compose & k8s deployments' },
   ],
   education: {
     degree: "Bachelor's in Computer Engineering",

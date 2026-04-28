@@ -68,8 +68,6 @@ body::before {
   display: grid;
   grid-template-columns: 268px 1fr;
   min-height: 100vh;
-  max-width: 1360px;
-  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
@@ -170,7 +168,7 @@ body::before {
 .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ——— MAIN ——— */
-.main { padding: 64px 68px; display: flex; flex-direction: column; }
+.main { padding: 64px 68px; display: flex; flex-direction: column; max-width: 1500px; width: 100%; }
 
 /* Section spacing driven by density */
 .sec-gap-compact   { gap: 56px; }
@@ -214,7 +212,7 @@ body::before {
 }
 .hero-body {
   font-size: 14.5px; line-height: 1.75; color: var(--text-mid);
-  max-width: 560px;
+  max-width: 760px;
 }
 .hero-body strong { color: var(--text); font-weight: 600; }
 
@@ -283,7 +281,7 @@ body::before {
 .tag:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-dim); transform: translateY(-2px); }
 
 /* ——— PROJECTS ——— */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
 .proj-card {
   background: var(--card-bg); border: 1px solid var(--border);
   padding: 24px; cursor: pointer;
